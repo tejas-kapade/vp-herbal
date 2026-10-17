@@ -8,3 +8,18 @@ function orderOnWhatsApp(productName, price) {
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
 }
+
+/**
+ * Shows or hides the ingredient image on an individual product card.
+ */
+function toggleProductCard(button) {
+    const card = button.closest('[data-product-card]');
+    if (!card) return;
+
+    const isFlipped = card.classList.toggle('is-flipped');
+    const trigger = card.querySelector('[data-flip-trigger]');
+
+    if (trigger) {
+        trigger.setAttribute('aria-pressed', String(isFlipped));
+    }
+}

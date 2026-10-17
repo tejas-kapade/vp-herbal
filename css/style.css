@@ -11,3 +11,85 @@ h1, h2, h3, .brand-font {
 html {
     scroll-behavior: smooth;
 }
+
+/* Small details that make the page feel more polished and accessible. */
+::selection {
+    background: #a7f3d0;
+    color: #022c22;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
+
+/* Product ingredient cards */
+.product-card {
+    height: 35.5rem;
+    perspective: 1200px;
+}
+
+.product-card-inner {
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 650ms ease;
+}
+
+.product-card.is-flipped .product-card-inner {
+    transform: rotateY(180deg);
+}
+
+.product-card-face {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.product-card-back {
+    display: flex;
+    flex-direction: column;
+    transform: rotateY(180deg);
+}
+
+/* Keep the longer Hair Oil description clear of the action row. */
+.product-card-front > div:first-child > .p-6 {
+    padding-bottom: 0.75rem;
+    padding-top: 1.25rem;
+}
+
+.ingredient-image {
+    display: block;
+    max-height: 28rem;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .product-card-inner {
+        transition: none;
+    }
+}
+
+@media (max-width: 640px) {
+    header .h-24 {
+        height: 5.5rem;
+    }
+
+    header a[aria-label="VP Herbal home"] img {
+        height: 3.25rem;
+        width: 3.25rem;
+    }
+
+    .product-card {
+        height: 36rem;
+    }
+
+    .ingredient-image {
+        max-height: 27rem;
+    }
+}
