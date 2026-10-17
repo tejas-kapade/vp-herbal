@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VP Herbal - Pure Ayurvedic Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-emerald-800 flex items-center justify-center text-white font-bold text-xl brand-font">VP</div>
+                <div>
+                    <span class="text-xl font-bold brand-font tracking-wide text-emerald-900">VP Herbal</span>
+                    <span class="block text-xs text-stone-500 uppercase tracking-widest">Handcrafted Ayurveda</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-stone-600">
+                <a href="#products" class="hover:text-emerald-800 transition">Products</a>
+                <a href="#about" class="hover:text-emerald-800 transition">Our Process</a>
+                <a href="#story" class="hover:text-emerald-800 transition">About Creators</a>
+                <a href="#reviews" class="hover:text-emerald-800 transition">Reviews</a>
+            </nav>
+            <a href="#products" class="bg-emerald-800 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-emerald-900 transition shadow-sm">
+                Explore Products
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-emerald-900 to-emerald-950 text-white py-24 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d1fae5_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-block bg-emerald-800/80 text-emerald-200 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-6 border border-emerald-700">
+                100% Homemade & Traditional
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-bold tracking-tight mb-6 leading-tight">
+                Rooted in Nature, <br>Crafted for Healing.
+            </h1>
+            <p class="text-lg sm:text-xl text-emerald-100/90 mb-10 max-w-2xl mx-auto font-light">
+                Experience the pure potency of authentic Ayurvedic formulations made at home with sacred herbs, cold-pressed oils, and generational wisdom.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#products" class="bg-amber-500 hover:bg-amber-600 text-stone-950 font-semibold px-8 py-4 rounded-full transition shadow-lg">
+                    Shop Ayurvedic Remedies
+                </a>
+                <a href="#about" class="bg-white/10 hover:bg-white/20 text-white font-medium px-8 py-4 rounded-full transition border border-white/20">
+                    Learn How We Make It
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Our Signature Remedies</h2>
+            <p class="text-stone-600">Clicking 'Order via WhatsApp' prepares a direct message with your chosen product for quick confirmation.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Product 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="h-64 bg-stone-200 relative overflow-hidden flex items-center justify-center text-stone-400 bg-[url('https://images.unsplash.com/photo-1608248597359-90547346393b?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center">
+                        <div class="absolute inset-0 bg-black/10"></div>
+                        <span class="relative z-10 bg-white/90 backdrop-blur px-3 py-1 rounded-md text-xs font-bold text-stone-800">Bestseller</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Ayurvedic Hair Strengthening Oil</h3>
+                        <p class="text-stone-600 text-sm mb-4">Infused with Bhringraj, Amla, and pure coconut oil to reduce hair fall and nourish follicles from root to tip.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-emerald-900">₹499</span>
+                            <span class="text-xs text-stone-500">200ml Bottle</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button onclick="orderOnWhatsApp('Ayurvedic Hair Strengthening Oil', '₹499')" class="w-full bg-emerald-800 hover:bg-emerald-900 text-white font-medium py-3 px-4 rounded-xl transition flex items-center justify-center space-x-2">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        <span>Order via WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="h-64 bg-stone-200 relative overflow-hidden flex items-center justify-center text-stone-400 bg-[url('https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center">
+                        <div class="absolute inset-0 bg-black/10"></div>
+                        <span class="relative z-10 bg-amber-500 text-stone-950 px-3 py-1 rounded-md text-xs font-bold">Special Care</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Herbal Bone & Joint Strengthening Oil</h3>
+                        <p class="text-stone-600 text-sm mb-4">Traditional medicated oil formulated with rare Himalayan roots and warm sesame base to ease joint stiffness and strengthen bones.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-emerald-900">₹649</span>
+                            <span class="text-xs text-stone-500">150ml Bottle</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button onclick="orderOnWhatsApp('Herbal Bone & Joint Strengthening Oil', '₹649')" class="w-full bg-emerald-800 hover:bg-emerald-900 text-white font-medium py-3 px-4 rounded-xl transition flex items-center justify-center space-x-2">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        <span>Order via WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="h-64 bg-stone-200 relative overflow-hidden flex items-center justify-center text-stone-400 bg-[url('https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center">
+                        <div class="absolute inset-0 bg-black/10"></div>
+                        <span class="relative z-10 bg-white/90 backdrop-blur px-3 py-1 rounded-md text-xs font-bold text-stone-800">Pure & Gentle</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Natural Herbal Shampoo</h3>
+                        <p class="text-stone-600 text-sm mb-4">Sulfate-free cleanser crafted with Reetha, Shikakai, and Hibiscus to maintain scalp health and natural shine.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-emerald-900">₹399</span>
+                            <span class="text-xs text-stone-500">250ml Bottle</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button onclick="orderOnWhatsApp('Natural Herbal Shampoo', '₹399')" class="w-full bg-emerald-800 hover:bg-emerald-900 text-white font-medium py-3 px-4 rounded-xl transition flex items-center justify-center space-x-2">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        <span>Order via WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traditional Process -->
+    <section id="about" class="bg-emerald-950 text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2 block">Authentic Methods</span>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">How We Craft Our Remedies</h2>
+                <p class="text-stone-300">We do not mass-produce. Every batch is slow-cooked following traditional Ayurvedic texts.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-emerald-900/50 p-8 rounded-2xl border border-emerald-800">
+                    <div class="w-12 h-12 bg-amber-500 text-stone-950 font-bold rounded-xl flex items-center justify-center text-xl mb-6">1</div>
+                    <h3 class="text-xl font-bold mb-3">Handpicked Raw Herbs</h3>
+                    <p class="text-stone-300 text-sm leading-relaxed">We source pure, sun-dried herbs directly from trusted cultivators, ensuring zero artificial additives or preservatives.</p>
+                </div>
+                <div class="bg-emerald-900/50 p-8 rounded-2xl border border-emerald-800">
+                    <div class="w-12 h-12 bg-amber-500 text-stone-950 font-bold rounded-xl flex items-center justify-center text-xl mb-6">2</div>
+                    <h3 class="text-xl font-bold mb-3">Slow Sun-Steeping & Boiling</h3>
+                    <p class="text-stone-300 text-sm leading-relaxed">Following classical Taila Pak Vidhi, oils and herbs are simmered slowly over wood-fire for hours to extract maximum medicinal essence.</p>
+                </div>
+                <div class="bg-emerald-900/50 p-8 rounded-2xl border border-emerald-800">
+                    <div class="w-12 h-12 bg-amber-500 text-stone-950 font-bold rounded-xl flex items-center justify-center text-xl mb-6">3</div>
+                    <h3 class="text-xl font-bold mb-3">Fresh Bottling & Quality Check</h3>
+                    <p class="text-stone-300 text-sm leading-relaxed">Filtered naturally without harsh chemical clarifiers and hand-bottled in sterilized containers ready for your home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Creators Story -->
+    <section id="story" class="py-20 px-4 max-w-5xl mx-auto">
+        <div class="bg-white rounded-3xl p-8 sm:p-12 border border-stone-200 shadow-sm flex flex-col md:flex-row items-center gap-10">
+            <div class="w-full md:w-1/2 h-80 bg-stone-200 rounded-2xl bg-[url('https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center"></div>
+            <div class="w-full md:w-1/2">
+                <span class="text-emerald-800 text-xs font-bold uppercase tracking-widest mb-2 block">Meet The Makers</span>
+                <h2 class="text-3xl font-bold text-stone-900 mb-4">Crafted with Care at Home</h2>
+                <p class="text-stone-600 text-sm mb-4 leading-relaxed">
+                    VP Herbal was born out of a passion for traditional healing remedies passed down through generations. What started as small batches brewed for family and friends has now grown into a trusted home brand.
+                </p>
+                <p class="text-stone-600 text-sm mb-6 leading-relaxed">
+                    We believe that true wellness comes from nature uncompromised. Every bottle reflects our personal commitment to purity, honesty, and effectiveness.
+                </p>
+                <div class="flex items-center space-x-4">
+                    <div class="font-bold text-stone-900">VP Herbal Team</div>
+                    <div class="text-stone-400">|</div>
+                    <div class="text-emerald-800 text-sm font-medium">Home-Brewed in India</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section id="reviews" class="bg-stone-100 py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-stone-900 mb-4">Trusted by Our Customers</h2>
+                <p class="text-stone-600">See what people are experiencing after using VP Herbal remedies.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
+                    <div class="flex text-amber-500 mb-3">★★★★★</div>
+                    <p class="text-stone-700 text-sm mb-4 italic">"The hair oil has completely transformed my hair texture and reduced hair fall significantly within 3 weeks of consistent use."</p>
+                    <div class="font-bold text-stone-900 text-sm">Sunita K.</div>
+                    <div class="text-xs text-stone-500">Mumbai</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
+                    <div class="flex text-amber-500 mb-3">★★★★★</div>
+                    <p class="text-stone-700 text-sm mb-4 italic">"The joint oil gives immense relief during winters. Pure traditional formulation that actually works."</p>
+                    <div class="font-bold text-stone-900 text-sm">Rajesh M.</div>
+                    <div class="text-xs text-stone-500">Thane</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
+                    <div class="flex text-amber-500 mb-3">★★★★★</div>
+                    <p class="text-stone-700 text-sm mb-4 italic">"Very gentle shampoo! Leaves hair feeling clean without any dryness. Love that it's completely chemical-free."</p>
+                    <div class="font-bold text-stone-900 text-sm">Priya S.</div>
+                    <div class="text-xs text-stone-500">Pune</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-12 px-4 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-full bg-emerald-800 flex items-center justify-center text-white font-bold brand-font">VP</div>
+                <span class="text-white font-bold brand-font text-lg">VP Herbal</span>
+            </div>
+            <p class="text-xs text-center md:text-left">© 2026 VP Herbal. All rights reserved. Handcrafted Ayurvedic Wellness.</p>
+            <div class="flex space-x-6 text-sm">
+                <a href="https://instagram.com" target="_blank" class="hover:text-white transition">Instagram</a>
+                <a href="https://facebook.com" target="_blank" class="hover:text-white transition">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Order Script -->
+    <script>
+        function orderOnWhatsApp(productName, price) {
+            // Configured with VP Herbal's WhatsApp number (+91 9960799652)
+            const phoneNumber = "919960799652"; 
+            const message = `Hello VP Herbal! I would like to order:\n\n*Product:* ${productName}\n*Price:* ${price}\n\nPlease share payment and shipping details.`;
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+        }
+    </script>
+</body>
+</html>
