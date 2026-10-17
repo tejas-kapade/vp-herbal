@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VP Herbal - Pure Ayurvedic Wellness</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        h1, h2, h3, .brand-font { font-family: 'Playfair Display', serif; }
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-stone-50 text-stone-800 antialiased">
 
@@ -70,9 +70,9 @@
             <!-- Product 1 -->
             <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                 <div>
-                    <div class="h-64 bg-stone-200 relative overflow-hidden flex items-center justify-center text-stone-400 bg-[url('https://images.unsplash.com/photo-1608248597359-90547346393b?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center">
-                        <div class="absolute inset-0 bg-black/10"></div>
-                        <span class="relative z-10 bg-white/90 backdrop-blur px-3 py-1 rounded-md text-xs font-bold text-stone-800">Bestseller</span>
+                    <div class="h-64 bg-stone-200 relative overflow-hidden flex items-center justify-center text-stone-400">
+                        <img src="img/hair-oil.jpg" alt="Ayurvedic Hair Strengthening Oil" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur px-3 py-1 rounded-md text-xs font-bold text-stone-800 shadow">Bestseller</span>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-stone-900 mb-2">Ayurvedic Hair Strengthening Oil</h3>
@@ -94,9 +94,9 @@
             <!-- Product 2 -->
             <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                 <div>
-                    <div class="h-64 bg-stone-200 relative overflow-hidden flex items-center justify-center text-stone-400 bg-[url('https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center">
-                        <div class="absolute inset-0 bg-black/10"></div>
-                        <span class="relative z-10 bg-amber-500 text-stone-950 px-3 py-1 rounded-md text-xs font-bold">Special Care</span>
+                    <div class="h-64 bg-stone-200 relative overflow-hidden flex items-center justify-center text-stone-400">
+                        <img src="img/joint-oil.jpg" alt="Herbal Bone & Joint Strengthening Oil" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 z-10 bg-amber-500 text-stone-950 px-3 py-1 rounded-md text-xs font-bold shadow">Special Care</span>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-stone-900 mb-2">Herbal Bone & Joint Strengthening Oil</h3>
@@ -118,9 +118,9 @@
             <!-- Product 3 -->
             <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                 <div>
-                    <div class="h-64 bg-stone-200 relative overflow-hidden flex items-center justify-center text-stone-400 bg-[url('https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center">
-                        <div class="absolute inset-0 bg-black/10"></div>
-                        <span class="relative z-10 bg-white/90 backdrop-blur px-3 py-1 rounded-md text-xs font-bold text-stone-800">Pure & Gentle</span>
+                    <div class="h-64 bg-stone-200 relative overflow-hidden flex items-center justify-center text-stone-400">
+                        <img src="img/shampoo.jpg" alt="Natural Herbal Shampoo" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur px-3 py-1 rounded-md text-xs font-bold text-stone-800 shadow">Pure & Gentle</span>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-stone-900 mb-2">Natural Herbal Shampoo</h3>
@@ -172,7 +172,9 @@
     <!-- About Creators Story -->
     <section id="story" class="py-20 px-4 max-w-5xl mx-auto">
         <div class="bg-white rounded-3xl p-8 sm:p-12 border border-stone-200 shadow-sm flex flex-col md:flex-row items-center gap-10">
-            <div class="w-full md:w-1/2 h-80 bg-stone-200 rounded-2xl bg-[url('https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center"></div>
+            <div class="w-full md:w-1/2 h-80 bg-stone-200 rounded-2xl overflow-hidden">
+                <img src="img/logo.png" alt="VP Herbal Makers" class="w-full h-full object-cover">
+            </div>
             <div class="w-full md:w-1/2">
                 <span class="text-emerald-800 text-xs font-bold uppercase tracking-widest mb-2 block">Meet The Makers</span>
                 <h2 class="text-3xl font-bold text-stone-900 mb-4">Crafted with Care at Home</h2>
@@ -236,15 +238,7 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Order Script -->
-    <script>
-        function orderOnWhatsApp(productName, price) {
-            // Configured with VP Herbal's WhatsApp number (+91 9960799652)
-            const phoneNumber = "919960799652"; 
-            const message = `Hello VP Herbal! I would like to order:\n\n*Product:* ${productName}\n*Price:* ${price}\n\nPlease share payment and shipping details.`;
-            const encodedMessage = encodeURIComponent(message);
-            window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
-        }
-    </script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
